@@ -1,0 +1,23 @@
+.banner {
+    background-image: url("https://scontent.fcgp28-1.fna.fbcdn.net/v/t1.6435-9/237836519_3016116621995820_278326325298556071_n.jpg?_nc_cat=104&_nc_rgb565=1&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=DcD_A_Xf-k4AX91paue&_nc_ht=scontent.fcgp28-1.fna&oh=f5ffa3105dac68a50d8acc56013ddd84&oe=6180EEDF"),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .title {
+    color: white;
+    font-weight: bold;
+    font-size: 59px;
+  }
+  .about-btn {
+    background-color: #ff0505;
+    outline: none;
+    border: none;
+    padding: 17px 34px;
+    color: white;
+  }
