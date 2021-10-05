@@ -2,7 +2,7 @@
 
 ## Darul Ikra Model Madrasa
 
-# Live-site-link:
+# Live-site-link:https://trusting-carson-90190a.netlify.app/home
 
 #Project of Educational Service Website.
 
