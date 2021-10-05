@@ -7,25 +7,26 @@ import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
+import MenuBar from "./components/MenuBar/MenuBar";
 
 function App(){
   return(
     <div>
     <Router>
-    {/* <Header></Header> */}
+     <MenuBar></MenuBar>
       <Switch>
         <Route exact path="/">
-          <Home></Home>
+        <Home></Home>
         </Route>
          <Route path="/home">
-          <Home></Home>
-        </Route>
+         <Home></Home>
+         </Route>
          <Route path="/about">
-          <About></About>
-        </Route>
+         <About></About>
+         </Route>
          <Route path="/services">
-          <Services></Services>
-        </Route>
+         <Services></Services>
+         </Route>
          <Route path="/contact">
          <Contact></Contact>
         </Route>
@@ -33,9 +34,10 @@ function App(){
          <Footer></Footer>
         </Route>
          <Route path="*">
-          <NotFound></NotFound>
+         <NotFound></NotFound>
         </Route>
       </Switch>
+      <Footer></Footer>
     </Router>
     </div>
   )

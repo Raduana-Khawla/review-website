@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-  <footer>
+  <footer className="mt-5">
       <div>
       <div className="row">
       <div className="col">
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
        </div>
        <hr />
-       <p className="copyright">Darul Ikra Model Madrasa 2021</p>
+       <p className="copyright">Darul Ikra Model Madrasa © 2021</p>
     </div>
   </footer>
            );

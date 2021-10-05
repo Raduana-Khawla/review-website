@@ -1,11 +1,11 @@
 .name{
     padding: 20px;
     padding-left: 150px;
-    color: blue;
+    color: black;
     font-size: large;
 }
 .style{
-    background-color: bisque;
+    background-color: rgb(145, 87, 17);
 }
 p{
     color: black;

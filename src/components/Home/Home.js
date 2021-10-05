@@ -1,51 +1,32 @@
 import React, { useEffect, useState } from "react";
 import About from "../About/About";
 import Contact from "../ContactUs/Contact";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import Services from "../Services/Services";
 import './Home.css';
-
+import Banner from "../Banner/Banner";
 const Home = () => {
-  
-
-     const [services, setServices] = useState([]);
-     const [about, setAbout] = useState([]);
-  
+     const [services, serServices] = useState([]);
     useEffect(() => {
         fetch('./tools.JSON')
         .then((res) => res.json())
-        .then((data) => 
-          setServices(data)
-          // setTeams(data)}
-          )
-        
-    }, []);
-    const  handleAddToCart = (service)=>
-    {
-        const newCart = [...about, service];
-      setAbout(newCart);
-    }
-    return (
-     
-// console.log(cart);
-<div>
-    <div>
-    <Header></Header>
-       {services.map(service=> 
-       <Services key={service.key}
-       service={service}
-       handleAddToCart=
-       {handleAddToCart}>
-       </Services>)}
-    </div>
-
-    <div>
-    <About></About>
-    <Contact></Contact>
-    <Footer></Footer>
-  </div>
-  </div>
+        .then((data) => serServices(data))
+    }, []); 
+    return (  
+    <><div>
+     <Banner></Banner>
+      </div><section id="team">
+          <div className="col user-container my-3 py-5 text-center">
+            <div className="row gy-5">s
+              {services.map(service => <Services key={service.key}
+                service={service}></Services>
+              )}
+            </div>
+          </div>
+          <div>
+          </div>
+           <About></About>
+          <Contact></Contact>
+        </section></>
   );
 };
 

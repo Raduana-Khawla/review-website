@@ -3,40 +3,10 @@
   background-color: skyblue;
   line-height: 20px;
   margin-bottom: 50px;
+  position: relative;
 }
-/* .header {
-  text-align: center;
-  padding-top: 10px;
-  padding-left: 10px;
-} */
-.songgothon{
+.title{
   font-size: xx-large;
-  padding-bottom: 10px;
-  color: blue;
+  padding: 10px;
+  color:brown;
 }
-.program{
-  color: blue;
-  padding-top: 10px;
-}
-.logo {
-  height: 90px;
-  padding-left: 40px;
-  
-}
-/* .display nav{
-  margin: auto;
-  padding-top: 10px;
-} */
-
-/* .display a {
-  text-decoration: none;
-  color: white;
-  margin-right: 20px;
-  padding: 5px;
-  font-size: 20px;
-
-} */
-/* 
-.display a:hover {
-  background-color: lightgray;
-} */

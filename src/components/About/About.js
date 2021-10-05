@@ -12,9 +12,8 @@ const About=()=>{
         <br />
       </div>
       <div className='col-md-6 name p-5'>
-        <h1>why we are the best </h1>
-        <p className="dialect py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit quasi neque nisi adipisci delectus provident harum iure.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero cum temporibus omnis recusandae reprehenderit tempora blanditiis labore iusto quis, quam illum quibusdam minima debitis, sit dolorem a maxime. Amet, sed. </p>
+        <h1>Why we are the best?</h1>
+        <p className="dialect py-5">The system in which mainly the principles of the Quran, hadith, and fiqh are taught is called madrasah education, in other words, madrasah education means Islamic education. In our country, there are two systems of madrasah education.</p>
       </div>
     </div>
   )

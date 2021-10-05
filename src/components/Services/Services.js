@@ -1,51 +1,30 @@
-import React from "react";
+import React from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import './Services.css';
-const Services=(props)=>{
- const{name, img,price,key,category}=props.service;
-//  console.log(props.service);
-  return(
-    <div>
-    {/* <div class="header">
-    <h1>Reliable, efficient delivery</h1>
-    <h1>Powered by Technology</h1>
-
-    <p>Our Artificial Intelligence powered tools use millions of project data points
-      to ensure that your project is successful</p>
-  </div> */}
-  <div className="row1-container">
-    <div className="box box-down cyan">
-      <h1>{name}</h1>
-      <h3>{category}</h3>
-      <h4>{price}</h4>
-      <img  src={img} alt="" className="img-fluid rounded-circle w-100 mb-3"/>
-    </div>
-  <div class="box red">
-    <h1>{name}</h1>
-      <h3>{category}</h3>
-      <h4>{price}</h4>
-      <img  src={img} alt="" className="img-fluid rounded-circle w-100 mb-3"/>
-    </div>
-
-    <div class="box box-down blue">
-    <h1>{name}</h1>
-      <h3>{category}</h3>
-      <h4>{price}</h4>
-      <img  src={img} alt="" className="img-fluid rounded-circle w-100 mb-3"/>
-    </div>
-  </div>
-  <div class="row2-container">
-    <div class="box orange">
-    <h1>{name}</h1>
-      <h3>{category}</h3>
-      <h4>{price}</h4>
-       <img  src={img} alt="" className="img-fluid rounded-circle w-100 mb-3"/>
-    </div>
-  </div> 
-  </div>
-  
-  );
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import  './Services.css';
+const Services = (props) =>{
+    const {name,img,price,category} = props.service;
+// fontAwesome
+    const cartIcon = <FontAwesomeIcon icon={faArrowRight} />
+    return(
+<div className="col-md-4 col">
+     <div className="card h-100">
+         <div className="card-body">
+           <img  src={img} alt="" className="img-fluid rounded-circle w-75 mb-3"/>
+           <div className="card-text">
+           <h4>{name}</h4>
+           <h4>{category}</h4>
+           <br />
+           <h3>price: {price}</h3>
+           </div>
+          </div>
+           <button className="text-uppercase show text-center text-white mt-3 ">
+            Add to cart
+           </button>
+           </div>
+       </div>  
+    );
 };
 export default Services;
 
+          
